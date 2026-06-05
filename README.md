@@ -8,9 +8,7 @@
   <h3 align="center">Supabase Raycast Extension</h3>
 
   <p align="center">
-    🚧 atention this project is under development 🚧
-    <br/>
-    <strong>Secured & Simple <a href="https://supabase.io/">Supabase</a> way to Visualizer,manage<br /> and query your Supabase project's from Raycast.</strong>
+    <strong>Secured & Simple <a href="https://supabase.io/">Supabase</a> way to visualize, manage<br /> and query your Supabase project from Raycast.</strong>
     <br />
     <br />
     <a href="https://github.com/Rychillie/raycast-supabase/issues">Report Bug</a>
@@ -25,35 +23,63 @@
 
 ## 🚀 Features
 
+### List Tables and Details
 - Query all tables and list them
-- Query all collumn names and list them
+- Query all column names and types in a detail panel
+- View table descriptions and column metadata
+
+### Row Management
+- Browse all rows with pagination
+- View row details in a side panel
+- Add new rows with dynamic form fields
+- Edit existing rows
+- Delete rows with confirmation
+
+### Table & Column Management
+- Create new tables with custom columns and types
+- Rename tables
+- Delete tables with confirmation
+- Add columns to existing tables
+- Edit columns (rename, change type, set nullable, change default)
+- Drop columns from tables
+
+### User Management
+- List all auth users with details
+- Invite new users by email
+- Edit user metadata and roles
+- Delete users
+
+### SQL Editor
+- Execute arbitrary SQL queries
+- View results in a searchable list
+- Copy results as JSON
+- Query execution timing
 
 ## 📇 About The Project
 
-Raycast is an amazing tool for MacOS with amazing integrations, and I'm loving using it. That's why I found it interesting to create an extension that would allow me to use all the powers of Supabase and access them more quickly while I develop my projects.
+Raycast is an amazing tool for macOS with amazing integrations. This extension allows you to use all the powers of Supabase and access them more quickly while developing your projects.
 
-## ROADMAP (to lauch v1):
-
-The project is under development, i don't have the time to work on it, but i will try to work on it as much as i can. If you want to help, please open an issue or a pull request.
+## ROADMAP (to launch v1):
 
 - [x] Query all tables and list them
-- [x] Query all collumn names and list them on side
-- [ ] Improve Types
-- [ ] Query all rows and list them
-- [ ] Editing tables
-  - [ ] Add new row
-  - [ ] Delete row
-  - [ ] Edit row
-  - [ ] Create new table
-  - [ ] Delete table
-  - [ ] Edit table
-  - [ ] Create new column
-  - [ ] Delete column
-  - [ ] Edit column
-- [ ] Query all users
-  - [ ] Invite new user
-  - [ ] Delete user
-  - [ ] Edit user
+- [x] Query all column names and list them on side
+- [x] Improve Types
+- [x] Query all rows and list them
+- [x] Editing tables
+  - [x] Add new row
+  - [x] Delete row
+  - [x] Edit row
+  - [x] Create new table
+  - [x] Delete table
+  - [x] Edit table (rename)
+  - [x] Create new column
+  - [x] Delete column
+  - [x] Edit column (rename, change type, nullable, default)
+- [x] Query all users
+  - [x] Invite new user
+  - [x] Delete user
+  - [x] Edit user
+- [x] SQL Editor
 
 ## 🐾 Instructions
 
@@ -85,11 +111,13 @@ Open Raycast and type `Import Extension` and select the location folder.
 
 ### 5. Configure the project
 
-Opne your projects on Supabase copy the Supabase URL and the Supabase Anon Key to use on Raycast.
+Open your project on Supabase, copy the **Supabase URL** and the **Supabase Anon Key** (or **service_role** key) to use on Raycast.
+
+> **Tip:** For full functionality (user management, SQL editor, table/column management), use the **service_role** key. You can optionally provide it separately in the "Service Role Key" field.
 
 ### 6. Use it
 
-Simple use the project on Raycast and enjoy it. If you have any suggestion or bug report, please open an issue.
+Simply use the project on Raycast and enjoy it. If you have any suggestion or bug report, please open an issue.
 
 ## 📜 License
 
